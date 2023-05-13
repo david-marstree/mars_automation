@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "marstree-automation",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "This is an Obsidian plugin for MARStree to generation monthly invoice to customer",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -12,7 +12,9 @@
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "^16.11.6",
+		"@types/node": "^20.1.3",
+		"@types/react": "^18.2.6",
+		"@types/react-dom": "^18.2.4",
 		"@typescript-eslint/eslint-plugin": "5.29.0",
 		"@typescript-eslint/parser": "5.29.0",
 		"builtin-modules": "3.3.0",
@@ -20,5 +22,14 @@
 		"obsidian": "latest",
 		"tslib": "2.4.0",
 		"typescript": "4.7.4"
+	},
+	"dependencies": {
+		"@azure/msal-node": "^1.17.2",
+		"@microsoft/microsoft-graph-client": "^3.0.5",
+		"@microsoft/microsoft-graph-types": "^2.31.0",
+		"axios": "^1.4.0",
+		"node-fetch": "^3.3.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	}
 }

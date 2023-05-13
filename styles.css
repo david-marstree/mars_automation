@@ -6,3 +6,9 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+.client {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
